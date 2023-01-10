@@ -18,7 +18,7 @@ public class PlayerController : NetworkBehaviour {
     {
         if (!IsOwner)
         {
-            //Destroy(this);
+            Destroy(this);
         }
     }
 

@@ -35,7 +35,7 @@ public class PlayerNetwork : NetworkBehaviour
     {
         if(!IsOwner)
         {
-            //Destroy(transform.GetComponent<PlayerController>());
+            Destroy(transform.GetComponent<PlayerController>());
         }
     }
 
