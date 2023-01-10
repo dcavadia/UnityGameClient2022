@@ -34,7 +34,7 @@ public class PlayerNetwork : NetworkBehaviour
     struct PlayerNetworkData : INetworkSerializable
     {
         private float _x, _z;
-        private float _yRot;
+        private short _yRot;
 
         internal Vector3 Position
         {
@@ -51,7 +51,7 @@ public class PlayerNetwork : NetworkBehaviour
             get => new Vector3(0, _yRot, 0);
             set
             {
-                _yRot = value.y;
+                _yRot = (short)value.y;
             }
         }
 
